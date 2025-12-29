@@ -9,10 +9,13 @@ import {
   ShieldCheck,
   Compass,
   LayoutGrid,
-  ArrowUpRight
+  ArrowUpRight,
+  FileDown
 } from 'lucide-react';
 
 const App = () => {
+  const googleFormUrl = "https://forms.gle/your-google-form-id"; // Replace with your actual G-Form link
+  const pdfUrl = "/brochure.pdf"; 
   // Arvind Project Pricing
   const unitConfigs = [
     { type: '2 BHK', size: '1131 - 1220 sft', price: '₹1.20 - 1.30 Cr*' },
@@ -71,9 +74,23 @@ const App = () => {
             <a href="#pricing" className="hover:text-amber-600 transition-colors">Pricing</a>
             <a href="#magicbricks" className="hover:text-amber-600 transition-colors">Magic Bricks</a>
             <a href="#areas" className="hover:text-amber-600 transition-colors">Area Wise</a>
-            <button className="bg-blue-900 text-white px-5 py-2.5 rounded hover:bg-amber-600 transition-all">
-              Enquire
-            </button>
+           <a 
+              href={pdfUrl} 
+              download="Arvind-Bannerghatta-Brochure.pdf"
+              className="flex items-center gap-2 border-2 border-blue-900 text-blue-900 px-4 py-2 rounded hover:bg-blue-50 transition-all"
+            >
+              <FileDown  className="w-4 h-4" /> Brochure
+            </a>
+
+            {/* Enquire Button */}
+            <a 
+              href={googleFormUrl} 
+              target="_blank" 
+              rel="noreferrer"
+              className="bg-blue-900 text-white px-5 py-2.5 rounded hover:bg-amber-600 transition-all"
+            >
+              Enquire Now
+            </a>
           </div>
         </div>
       </nav>
