@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { 
   MapPin, 
   Building2, 
@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 
 const App = () => {
-  const googleFormUrl = "https://forms.gle/your-google-form-id"; // Replace with your actual G-Form link
+  const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScrwwgp2-s4qYKbXP1m3S6iDwugTZanO6h1Slws7EGlfF2n-w/viewform?usp=sharing&ouid=113988146229226111905"; // Replace with your actual G-Form link
   const pdfUrl = "/brochure.pdf"; 
   // Arvind Project Pricing
   const unitConfigs = [
@@ -67,8 +67,8 @@ const App = () => {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
           <div className="flex flex-col">
-            <span className="text-2xl font-bold tracking-tighter text-blue-900">ARVIND</span>
-            <span className="text-[10px] tracking-[0.3em] uppercase text-amber-600 font-black">Bannerghatta</span>
+            <span className="text-2xl font-bold tracking-tighter text-blue-900">BRICKWICKS</span>
+            {/* <span className="text-[10px] tracking-[0.3em] uppercase text-amber-600 font-black"></span> */}
           </div>
           <div className="hidden md:flex gap-6 items-center text-xs font-bold uppercase tracking-widest">
             <a href="#pricing" className="hover:text-amber-600 transition-colors">Pricing</a>
@@ -207,13 +207,13 @@ const App = () => {
       {/* --- Footer --- */}
       <footer className="bg-white py-24 text-center border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-black tracking-tighter text-blue-900">ARVIND <span className="text-amber-500 font-light">BANNERGHATTA</span></h2>
+          <h2 className="text-3xl font-black tracking-tighter text-blue-900">BRICK<span className="text-amber-500 font-light">WICKS</span></h2>
           <p className="text-slate-400 mt-4 mb-10 max-w-md mx-auto italic">An upcoming world-class destination in South Bangalore. Stay tuned for the official launch.</p>
           
           <div className="flex flex-col items-center gap-6">
             <div className="flex items-center gap-4 bg-slate-50 px-8 py-5 rounded-3xl border border-slate-200">
               <Phone className="text-amber-600 w-6 h-6" />
-              <span className="text-2xl font-black text-slate-800">+91 9XXX XXX XXX</span>
+              <span className="text-2xl font-black text-slate-800">+91 98800 73706</span>
             </div>
             <a href="https://maps.app.goo.gl/bGLuVbsHUPMvCXzh8?g_st=aw" target="_blank" rel="noreferrer" className="text-amber-600 font-bold underline flex items-center gap-2">
               <MapPin className="w-4 h-4" /> View Map Location
@@ -221,7 +221,7 @@ const App = () => {
           </div>
           
           <div className="mt-20 pt-10 border-t border-slate-100 text-[10px] text-slate-400 font-bold uppercase tracking-[0.3em]">
-            © 2024 Arvind SmartSpaces • RERA Registration Pending
+            © 2025 BRICKWICKS • RERA Registration Pending
           </div>
         </div>
       </footer>
