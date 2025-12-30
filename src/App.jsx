@@ -119,7 +119,7 @@ const App = () => {
         </div>
         <div className="relative max-w-5xl mx-auto px-4">
           <span className="bg-amber-500 text-slate-900 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">Launching Soon</span>
-          <h1 className="text-4xl md:text-8xl font-black mb-8 tracking-tighter leading-tight">Arvind Codename <span className="text-amber-500 italic">Bannerghatta</span></h1>
+          <h1 className="text-4xl md:text-8xl font-black mb-8 tracking-tighter leading-tight">Arvind Codename <span className="text-amber-500 italic">Benagluru</span></h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-light px-4">Upcoming luxury landmark in South Bangalore across 4.30 Acres with premium specifications.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="#pricing" className="bg-amber-500 text-slate-900 px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform">View Pricing</a>
