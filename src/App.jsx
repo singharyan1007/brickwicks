@@ -40,16 +40,32 @@ import bg23 from '../public/assets/bg23.avif'
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [returnSection, setReturnSection] = useState(null);
 
   const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScrwwgp2-s4qYKbXP1m3S6iDwugTZanO6h1Slws7EGlfF2n-w/viewform?usp=sharing&ouid=113988146229226111905";
   const pdfUrl = "/brochure.pdf"; 
 
-  const handleProjectClick = (projectName) => {
+  const handleProjectClick = (projectName,sectionId=null) => {
     let data = projectsData[projectName];
     if (!data) {
         data = { ...defaultProjectData, name: projectName };
     }
+    setReturnSection(sectionId);
     setSelectedProject(data);
+  };
+
+   const handleBackToHome = () => {
+    setSelectedProject(null);
+    
+    // Wait 100ms for the Home page to render, then scroll
+    if (returnSection) {
+      setTimeout(() => {
+        const element = document.getElementById(returnSection);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
   };
 
   // --- MAPPING IMAGES TO DATA ---
@@ -154,7 +170,7 @@ const App = () => {
         }>
           <ProjectDetail 
               project={selectedProject} 
-              onBack={() => setSelectedProject(null)} 
+              onBack={() =>handleBackToHome()} 
           />
         </Suspense>
       ) : (
@@ -236,7 +252,7 @@ const App = () => {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {magicBricksListings.map((item, i) => (
-                <div key={i} className="group cursor-pointer" onClick={() => handleProjectClick(item.name)}>
+                <div key={i} className="group cursor-pointer" onClick={() => handleProjectClick(item.name,'magicbricks')}>
                   <div className="aspect-[4/5] rounded-2xl overflow-hidden mb-3 shadow-lg relative">
                     <img src={item.img} alt={item.name} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -272,7 +288,7 @@ const App = () => {
                         {group.items.map((item, pIdx) => (
                           <div 
                             key={pIdx} 
-                            onClick={() => handleProjectClick(item)}
+                            onClick={() => handleProjectClick(item,'areas')}
                             className="flex items-center justify-between p-3 rounded-xl hover:bg-white/10 transition-all text-sm font-medium text-slate-300 hover:text-white group/item cursor-pointer"
                           >
                             {item} <ArrowUpRight className="w-4 h-4 text-white/20 group-hover/item:text-amber-500" />
