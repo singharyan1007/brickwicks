@@ -95,7 +95,7 @@ const ProjectDetail = ({ project, onBack }) => {
             <ArrowLeft size={16} /> Back to Listings
           </button>
           <a href={googleFormUrl} target="_blank" rel="noreferrer" className="bg-amber-500 text-slate-900 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-amber-400">
-            Request Brochure
+            Contact Us
           </a>
         </div>
       </div>
