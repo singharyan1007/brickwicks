@@ -92,7 +92,7 @@ const ProjectDetail = ({ project, onBack }) => {
       <div className="sticky top-20 z-40 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100 py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <button onClick={onBack} className="flex items-center gap-2 text-slate-600 hover:text-blue-900 font-bold uppercase text-xs tracking-widest cursor-pointer">
-            <ArrowLeft size={16} /> Back to Listings
+            <ArrowLeft size={16} /> Back to Home
           </button>
           <a href={googleFormUrl} target="_blank" rel="noreferrer" className="bg-amber-500 text-slate-900 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-amber-400">
             Contact Us
