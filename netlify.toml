@@ -2,17 +2,31 @@
 command = "npm run build"
 publish = "dist"
 
+[context.production]
+publish = "dist"
+
+[context.deploy-preview]
+publish = "dist"
+
+[context.branch-deploy]
+publish = "dist"
+
 [[headers]]
-for = "/*.js"
+for = "/assets/*.css"
+  [headers.values]
+  Content-Type = "text/css"
+
+[[headers]]
+for = "/assets/*.js"
   [headers.values]
   Content-Type = "application/javascript"
 
 [[headers]]
-for = "/*.mjs"
+for = "/assets/*.mjs"
   [headers.values]
   Content-Type = "application/javascript"
 
-[[headers]]
-for = "/assets/*"
-  [headers.values]
-  Content-Type = "application/javascript"
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
