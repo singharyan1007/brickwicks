@@ -10,31 +10,31 @@ const ProjectDetail = React.lazy(() => import('./components/ProjectDetail'));
 import { projectsData, defaultProjectData } from './data/projectsData';
 import WhatsAppButton from './components/WhatsAppButton'; 
 
-// 2. IMPORT LOCAL IMAGES (.avif)
+// 2. IMPORT LOCAL IMAGES (.jpg)
 // Make sure these files exist in src/assets/
-import bg1 from '../public/assets/bg1.avif';   // Hero
-import bg2 from '../public/assets/bg2.avif';   // Highlight 1
-import bg3 from '../public/assets/bg3.avif';   // Highlight 2
-import bg4 from '../public/assets/bg4.avif';   // Highlight 3
-import bg5 from '../public/assets/bg5.avif';   // Highlight 4
-import bg6 from '../public/assets/bg6.avif';   // Pricing 1
-import bg7 from '../public/assets/bg7.avif';   // Pricing 2
-import bg8 from '../public/assets/bg8.avif';   // Pricing 3
-import bg9 from '../public/assets/bg9.avif';   // Pricing 4
-import bg10 from '../public/assets/bg10.avif'; // Pricing Side Image
-import bg11 from '../public/assets/bg11.avif'; // Project 1
-import bg12 from '../public/assets/bg12.avif'; // Project 2
-import bg13 from '../public/assets/bg13.avif'; // Project 3
-import bg14 from '../public/assets/bg14.avif'; // Project 4
-import bg15 from '../public/assets/bg15.avif'; // Project 5
-import bg16 from '../public/assets/bg16.avif'; // Project 6
-import bg17 from '../public/assets/bg17.avif'; // Area 1
-import bg18 from '../public/assets/bg18.avif'; // Area 2
-import bg19 from '../public/assets/bg19.avif'; // Area 3
-import bg20 from '../public/assets/bg20.avif'; // Footer
-import bg21 from '../public/assets/bg21.avif'
-import bg22 from '../public/assets/bg22.avif'
-import bg23 from '../public/assets/bg23.avif'
+import bg1 from '../public/assets/bg1.jpg';   // Hero
+import bg2 from '../public/assets/bg2.jpg';   // Highlight 1
+import bg3 from '../public/assets/bg3.jpg';   // Highlight 2
+import bg4 from '../public/assets/bg4.jpg';   // Highlight 3
+import bg5 from '../public/assets/bg5.jpg';   // Highlight 4
+import bg6 from '../public/assets/bg6.jpg';   // Pricing 1
+import bg7 from '../public/assets/bg7.jpg';   // Pricing 2
+import bg8 from '../public/assets/bg8.jpg';   // Pricing 3
+import bg9 from '../public/assets/bg9.jpg';   // Pricing 4
+import bg10 from '../public/assets/bg10.jpg'; // Pricing Side Image
+import bg11 from '../public/assets/bg11.jpg'; // Project 1
+import bg12 from '../public/assets/bg12.jpg'; // Project 2
+import bg13 from '../public/assets/bg13.jpg'; // Project 3
+import bg14 from '../public/assets/bg14.jpg'; // Project 4
+import bg15 from '../public/assets/bg15.jpg'; // Project 5
+import bg16 from '../public/assets/bg16.jpg'; // Project 6
+import bg17 from '../public/assets/bg17.jpg'; // Area 1
+import bg18 from '../public/assets/bg18.jpg'; // Area 2
+import bg19 from '../public/assets/bg19.jpg'; // Area 3
+import bg20 from '../public/assets/bg20.jpg'; // Footer
+import bg21 from '../public/assets/bg21.jpg'
+import bg22 from '../public/assets/bg22.jpg'
+import bg23 from '../public/assets/bg23.jpg'
 // Note: bg21, bg22, bg23 are available in assets if you want to swap them in later
 
 const App = () => {

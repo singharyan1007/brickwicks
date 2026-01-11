@@ -41,7 +41,7 @@ export const generateDescription = (project) => {
       location: "Sarjapur Road, East Bangalore",
       builder: "Mara Developers",
       price: "₹1.25 Cr Onwards",
-      img: "/assets/pd1.avif", 
+      img: "/assets/pd1.jpg", 
       amenities: ["Grand Clubhouse (50k sft)", "3 Swimming Pools", "Pet Park", "Mini Theatre"]
     },
     "Con Corde Eleve": {
@@ -49,7 +49,7 @@ export const generateDescription = (project) => {
       location: "K.R. Puram",
       builder: "Concorde Group",
       price: "₹1.40 Cr Onwards",
-      img: "/assets/pd2.avif",
+      img: "/assets/pd2.jpg",
       amenities: ["Sky Deck", "Infinity Pool", "Coworking Spaces", "Squash Courts"]
     },
     "Adarsh Lumina": {
@@ -57,7 +57,7 @@ export const generateDescription = (project) => {
       location: "Off Sarjapur",
       builder: "Adarsh Developers",
       price: "₹1.10 Cr Onwards",
-      img: "/assets/pd3.avif",
+      img: "/assets/pd3.jpg",
       amenities: ["Forest Trail", "Organic Garden", "Tennis Court", "Spa & Sauna"]
     },
     // You can add more projects here...
@@ -69,6 +69,6 @@ export const generateDescription = (project) => {
       builder: "Premium Developers",
       price: "Price on Request",
       // Fallback to the first image if specific one not found
-      img: "/assets/pd4.avif",
+      img: "/assets/pd4.jpg",
       amenities: ["Luxury Clubhouse", "Landscaped Gardens", "24/7 Security", "Sports Courts"]
   };
