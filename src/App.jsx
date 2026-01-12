@@ -22,19 +22,21 @@ import bg7 from '../public/assets/bg7.jpg';   // Pricing 2
 import bg8 from '../public/assets/bg8.jpg';   // Pricing 3
 import bg9 from '../public/assets/bg9.jpg';   // Pricing 4
 import bg10 from '../public/assets/bg10.jpg'; // Pricing Side Image
-import bg11 from '../public/assets/bg11.jpg'; // Project 1
-import bg12 from '../public/assets/bg12.jpg'; // Project 2
-import bg13 from '../public/assets/bg13.jpg'; // Project 3
-import bg14 from '../public/assets/bg14.jpg'; // Project 4
-import bg15 from '../public/assets/bg15.jpg'; // Project 5
-import bg16 from '../public/assets/bg16.jpg'; // Project 6
 import bg17 from '../public/assets/bg17.jpg'; // Area 1
 import bg18 from '../public/assets/bg18.jpg'; // Area 2
-import bg19 from '../public/assets/bg19.jpg'; // Area 3
 import bg20 from '../public/assets/bg20.jpg'; // Footer
-import bg21 from '../public/assets/bg21.jpg'
-import bg22 from '../public/assets/bg22.jpg'
-import bg23 from '../public/assets/bg23.jpg'
+import bg21 from '../public/assets/bg21.jpg';
+import Mana from '../public/assets/Mana.png';
+import Adarsh from '../public/assets/Adarsh.png';
+import Lakecrest from '../public/assets/Lakecrest.png';
+import Bren from '../public/assets/Bren.png';
+import Elaris from '../public/assets/Elaris.png';
+import Monarch from '../public/assets/Monarch.png';
+import Concorde from '../public/assets/Concorde.png';
+import Sowparnika from '../public/assets/Sowparnika.png';
+
+
+
 // Note: bg21, bg22, bg23 are available in assets if you want to swap them in later
 
 const App = () => {
@@ -78,12 +80,14 @@ const App = () => {
   ];
 
   const magicBricksListings = [
-    { name: "Mara Dale", img: bg16 },
-    { name: "Con Corde Eleve", img: bg9 },
-    { name: "Adarsh Lumina", img: bg13 },
-    { name: "Brigade Lake Crest", img: bg23 },
-    { name: "Sowparnika Petals", img: bg15 },
-    { name: "Godrej Woodscapes", img: bg16 }
+    { name: "Mara Dale", img: Mana },
+    { name: "Concorde Eleve", img: Concorde },
+    { name: "Adarsh Lumina", img: Adarsh },
+    { name: "Brigade Lakecrest", img: Lakecrest },
+    { name: "Sowparnika Whispering Petals", img: Sowparnika },
+    { name: "Godrej Elaris", img: Elaris },
+    { name: "Bren Aspera",img:Bren },
+    { name: "Monarch Aqua", img:Monarch }
   ];
 
   const regionalGroups = [
@@ -91,7 +95,7 @@ const App = () => {
       title: "East Bangalore - Off Sarjapur",
       banner: bg17,
       items: [
-        "Mara Dale", "Adarsh Lumina", "NBR - Soul of the Seasons", "Birla Evara",
+        "Mana Dale", "Adarsh Lumina", "NBR - Soul of the Seasons", "Birla Evara",
         "Adarsh Welkin Park", "Mana Cresta", "Mana Vista", "Gurenesto Primus",
         "Abhee Aria", "The Earth Sphere", "Meda East Winds", "Amberstone Vantara"
       ]
@@ -288,7 +292,6 @@ const App = () => {
                         {group.items.map((item, pIdx) => (
                           <div 
                             key={pIdx} 
-                            onClick={() => handleProjectClick(item,'areas')}
                             className="flex items-center justify-between p-3 rounded-xl hover:bg-white/10 transition-all text-sm font-medium text-slate-300 hover:text-white group/item cursor-pointer"
                           >
                             {item} <ArrowUpRight className="w-4 h-4 text-white/20 group-hover/item:text-amber-500" />
