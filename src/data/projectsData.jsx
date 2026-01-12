@@ -46,8 +46,8 @@ const getSpecs = (projectType) => {
 
 export const projectsData = {
   // --- 1. MANA DALE (Kodathi, Sarjapur) ---
-  "Mara Dale": {
-    name: "Mara Dale",
+  "Mana Dale": {
+    name: "Mana Dale",
     location: "Kodathi, Off Sarjapur Road",
     builder: "Mana Projects",
     price: "₹1.45 Cr Onwards",

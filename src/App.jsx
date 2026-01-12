@@ -80,7 +80,7 @@ const App = () => {
   ];
 
   const magicBricksListings = [
-    { name: "Mara Dale", img: Mana },
+    { name: "Mana Dale", img: Mana },
     { name: "Concorde Eleve", img: Concorde },
     { name: "Adarsh Lumina", img: Adarsh },
     { name: "Brigade Lakecrest", img: Lakecrest },
