@@ -147,6 +147,7 @@ const App = () => {
             <a href={googleFormUrl} target="_blank" rel="noreferrer" className="bg-blue-900 text-white px-5 py-2.5 rounded hover:bg-amber-600 transition-all">
               Enquire Now
             </a>
+
           </div>
 
           <button className="md:hidden p-2 text-blue-900" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -159,6 +160,14 @@ const App = () => {
             <button className="text-left" onClick={() => {setIsMenuOpen(false); setSelectedProject(null);}}>Home</button>
             <a href={pdfUrl} download className="flex items-center justify-center gap-2 border border-blue-900 py-3 rounded">
                 <FileDown size={18} /> Brochure
+            </a>
+             <a 
+              href={googleFormUrl} 
+              target="_blank" 
+              rel="noreferrer" 
+              className="bg-blue-900 text-white flex items-center justify-center py-3 rounded hover:bg-amber-600 transition-all"
+            >
+              Enquire Now
             </a>
           </div>
         )}
